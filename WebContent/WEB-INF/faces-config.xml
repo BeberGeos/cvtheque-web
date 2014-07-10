@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+	<application>
+		<message-bundle>resources.application</message-bundle>
+		<locale-config>
+			<default-locale>en</default-locale>
+		</locale-config>
+	</application>
+	<managed-bean>
+		<managed-bean-name>gererCVService</managed-bean-name>
+		<managed-bean-class>fr.neosoft.cvtheque.services.impl.GererCVService</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>gererReferentielService</managed-bean-name>
+		<managed-bean-class>fr.neosoft.cvtheque.services.impl.GererReferentielService</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>utilisateurDao</managed-bean-name>
+		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.UtilisateurDao</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>competenceDao</managed-bean-name>
+		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.CompetenceDao</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>adresseDao</managed-bean-name>
+		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.AdresseDao</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>categorieDao</managed-bean-name>
+		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.CategorieDao</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>clientDao</managed-bean-name>
+		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.ClientDao</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>experienceDao</managed-bean-name>
+		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.ExperienceDao</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>langageDao</managed-bean-name>
+		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.LangageDao</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>gererUtilisateurService</managed-bean-name>
+		<managed-bean-class>fr.neosoft.cvtheque.services.impl.GererUtilisateurService</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+</faces-config>
