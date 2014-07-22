@@ -12,53 +12,58 @@
 	</application>
 	<managed-bean>
 		<managed-bean-name>gererCVService</managed-bean-name>
-		<managed-bean-class>fr.neosoft.cvtheque.services.impl.GererCVService</managed-bean-class>
-		<managed-bean-scope>request</managed-bean-scope>
+		<managed-bean-class>fr.neosoft.cvtheque.services.impl.GererCVServiceImpl</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
 	</managed-bean>
 	<managed-bean>
 		<managed-bean-name>gererReferentielService</managed-bean-name>
-		<managed-bean-class>fr.neosoft.cvtheque.services.impl.GererReferentielService</managed-bean-class>
-		<managed-bean-scope>request</managed-bean-scope>
+		<managed-bean-class>fr.neosoft.cvtheque.services.impl.GererReferentielServiceImpl</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
 	</managed-bean>
 	<managed-bean>
 		<managed-bean-name>utilisateurDao</managed-bean-name>
-		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.UtilisateurDao</managed-bean-class>
-		<managed-bean-scope>request</managed-bean-scope>
+		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.UtilisateurDaoImpl</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
 	</managed-bean>
 	<managed-bean>
 		<managed-bean-name>competenceDao</managed-bean-name>
-		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.CompetenceDao</managed-bean-class>
-		<managed-bean-scope>request</managed-bean-scope>
+		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.CompetenceDaoImpl</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
 	</managed-bean>
 	<managed-bean>
 		<managed-bean-name>adresseDao</managed-bean-name>
-		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.AdresseDao</managed-bean-class>
-		<managed-bean-scope>request</managed-bean-scope>
+		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.AdresseDaoImpl</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
 	</managed-bean>
 	<managed-bean>
 		<managed-bean-name>categorieDao</managed-bean-name>
-		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.CategorieDao</managed-bean-class>
-		<managed-bean-scope>request</managed-bean-scope>
+		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.CategorieDaoImpl</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
 	</managed-bean>
 	<managed-bean>
 		<managed-bean-name>clientDao</managed-bean-name>
-		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.ClientDao</managed-bean-class>
-		<managed-bean-scope>request</managed-bean-scope>
+		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.ClientDaoImpl</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
 	</managed-bean>
 	<managed-bean>
 		<managed-bean-name>experienceDao</managed-bean-name>
-		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.ExperienceDao</managed-bean-class>
-		<managed-bean-scope>request</managed-bean-scope>
+		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.ExperienceDaoImpl</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
 	</managed-bean>
 	<managed-bean>
 		<managed-bean-name>langageDao</managed-bean-name>
-		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.LangageDao</managed-bean-class>
-		<managed-bean-scope>request</managed-bean-scope>
+		<managed-bean-class>fr.neosoft.cvtheque.dao.impl.LangageDaoImpl</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
 	</managed-bean>
 	<managed-bean>
 		<managed-bean-name>gererUtilisateurService</managed-bean-name>
-		<managed-bean-class>fr.neosoft.cvtheque.services.impl.GererUtilisateurService</managed-bean-class>
-		<managed-bean-scope>request</managed-bean-scope>
+		<managed-bean-class>fr.neosoft.cvtheque.services.impl.GererUtilisateurServiceImpl</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>utils</managed-bean-name>
+		<managed-bean-class>fr.neosoft.cvtheque.utils.Utils</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
 	</managed-bean>
 
 </faces-config>

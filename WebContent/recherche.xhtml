@@ -1,0 +1,27 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	<h:form id="form">
+		<p:growl id="msgs" showDetail="true" />
+		<p:dataTable id="tabUsers" var="user"
+			value="#{dtSearchView.users}">
+			<p:column filterBy="#{user.id}" headerText="Id" filterMatchMode="contains">
+				<h:outputText value="#{user.id}" />
+			</p:column>
+			<p:column filterBy="#{user.nom}" headerText="Nom" filterMatchMode="contains">
+				<h:outputText value="#{user.nom}" />
+			</p:column>
+			<p:column filterBy="#{user.prenom}" headerText="Prenom" filterMatchMode="contains">
+				<h:outputText value="#{user.prenom}" />
+			</p:column>
+			<p:column headerText="Date de naissance">
+				<h:outputText
+					value="#{utils.createStringFromDate(user.dateNaissance)}" />
+			</p:column>
+			<p:column style="width:150px;text-align: center">
+			</p:column>
+		</p:dataTable>
+	</h:form>
+</ui:composition>
