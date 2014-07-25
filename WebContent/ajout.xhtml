@@ -1,0 +1,39 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	<h:form id="addForm">
+			<p:messages autoUpdate="true" />
+			<h:panelGrid id="addUser" columns="4" cellpadding="5">
+				<h:outputLabel for="nom" value="Nom :" style="font-weight:bold" />
+				<p:inputText id="nom" value="#{dtAddView.userView.nom}"
+					required="true" label="Nom" />
+				<p:message for="name" />
+				<h:outputText value="#{dtAddView.userView.nom}" />
+
+				<h:outputLabel for="prenom" value="Prenom :"
+					style="font-weight:bold" />
+				<p:inputText id="prenom" value="#{dtAddView.userView.prenom}"
+					label="Prenom" required="true">
+				</p:inputText>
+				<p:message for="number" />
+				<h:outputText value="#{dtAddView.userView.prenom}" />
+
+				<h:outputLabel for="dateNaissance" value="Date de naissance :"
+					style="font-weight:bold" />
+				<p:inputText id="datenaissance"
+					value="#{dtAddView.userView.dateNaissance}">
+					<f:convertDateTime pattern="MM/dd/yyyy" />
+				</p:inputText>
+				<p:message for="dateNaissance" />
+				<h:outputText value="#{dtAddView.userView.dateNaissance}">
+					<f:convertDateTime pattern="MM/dd/yyyy" />
+				</h:outputText>
+			</h:panelGrid>
+
+			<p:commandButton value="Ajouter" update="grid" icon="ui-icon-check"
+				validateClient="true" style="margin-right:10px"
+				action="#{dtAddView.ajouterUtilisateur()}" />
+	</h:form>
+</ui:composition>

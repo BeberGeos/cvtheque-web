@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+	<configuration>
+		<date-format>dd/MM/yyyy</date-format>
+	</configuration>
+	<mapping>
+		<class-a>fr.neosoft.cvtheque.entities.Langage</class-a>
+		<class-b>fr.neosoft.cvtheque.view.beans.LangageView</class-b>
+	</mapping>
+	<mapping>
+		<class-a>fr.neosoft.cvtheque.entities.Experience</class-a>
+		<class-b>fr.neosoft.cvtheque.view.beans.ExperienceView</class-b>
+	</mapping>
+	<mapping>
+		<class-a>fr.neosoft.cvtheque.entities.Competence</class-a>
+		<class-b>fr.neosoft.cvtheque.view.beans.CompetenceView</class-b>
+	</mapping>
+	<mapping>
+		<class-a>fr.neosoft.cvtheque.entities.Categorie</class-a>
+		<class-b>fr.neosoft.cvtheque.view.beans.CategorieView</class-b>
+	</mapping>
+	<mapping>
+		<class-a>fr.neosoft.cvtheque.entities.Adresse</class-a>
+		<class-b>fr.neosoft.cvtheque.view.beans.AdresseView</class-b>
+	</mapping>
+	<mapping>
+		<class-a>fr.neosoft.cvtheque.entities.Client</class-a>
+		<class-b>fr.neosoft.cvtheque.view.beans.ClientView</class-b>
+	</mapping>
+	<mapping>
+		<class-a>fr.neosoft.cvtheque.entities.Utilisateur</class-a>
+		<class-b>fr.neosoft.cvtheque.view.beans.UtilisateurView</class-b>
+	</mapping>
+
+</mappings>  

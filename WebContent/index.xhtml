@@ -10,7 +10,7 @@
   <h:body> 
     <!-- formulaire --> 
     <h:form> 
-       <h3>On-Demand Loading</h3>
+       <h3>CVTheque</h3>
     <p:tabView dynamic="true" cache="true">
         <p:tab title="Recherche">
             <h:panelGrid columns="2" cellpadding="10">
@@ -18,10 +18,7 @@
             </h:panelGrid>
         </p:tab>
         <p:tab title="Ajout">
-            <h:panelGrid columns="2" cellpadding="10">
-                <p:graphicImage name="demo/images/godfather/godfather2.jpg" />
-                <h:outputText value="Francis Ford Coppola's legendary..." />
-            </h:panelGrid>
+                <ui:include src="ajout.xhtml"/>
         </p:tab>
         <p:tab title="Godfather Part III">
             <h:panelGrid columns="2" cellpadding="10">
