@@ -1,6 +1,7 @@
 package fr.neosoft.cvtheque.view;
 
-import javax.annotation.PostConstruct;
+import java.io.Serializable;
+
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.ViewScoped;
@@ -14,23 +15,36 @@ import fr.neosoft.cvtheque.view.beans.UtilisateurView;
 
 @ManagedBean(name="dtAddView")
 @ViewScoped
-public class AddView {
+public class AddView implements Serializable{
+	
+	private static final long serialVersionUID = 3799789277796250748L;
+
 	@ManagedProperty("#{utilisateurView}")
 	private UtilisateurView userView;
 	
 	@ManagedProperty("#{gererUtilisateurService}")
 	private GererUtilisateurService gererUtilisateur;
 	
-	@PostConstruct
-    public void init() {
-//		userView = new UtilisateurView();
-//        Mapper mapper = DozerBeanMapperSingletonWrapper.getInstance();
-//        mapper.map(userView, Utilisateur.class);
-    }
 	
 	public void ajouterUtilisateur(){
 		Mapper mapper = DozerBeanMapperSingletonWrapper.getInstance();
         Utilisateur user = (Utilisateur) mapper.map(userView, Utilisateur.class);
         gererUtilisateur.createUser(user);
+	}
+
+	public UtilisateurView getUserView() {
+		return userView;
+	}
+
+	public void setUserView(UtilisateurView userView) {
+		this.userView = userView;
+	}
+
+	public GererUtilisateurService getGererUtilisateur() {
+		return gererUtilisateur;
+	}
+
+	public void setGererUtilisateur(GererUtilisateurService gererUtilisateur) {
+		this.gererUtilisateur = gererUtilisateur;
 	}
 }

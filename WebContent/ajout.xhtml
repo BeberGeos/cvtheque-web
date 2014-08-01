@@ -4,12 +4,13 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
 	<h:form id="addForm">
+		<p:panel header="Ajout utilisateur">
 			<p:messages autoUpdate="true" />
 			<h:panelGrid id="addUser" columns="4" cellpadding="5">
 				<h:outputLabel for="nom" value="Nom :" style="font-weight:bold" />
-				<p:inputText id="nom" value="#{dtAddView.userView.nom}"
-					required="true" label="Nom" />
-				<p:message for="name" />
+				<p:inputText id="nom" value="#{dtAddView.userView.nom}" required="true"
+					label="Nom" />
+				<p:message for="nom" />
 				<h:outputText value="#{dtAddView.userView.nom}" />
 
 				<h:outputLabel for="prenom" value="Prenom :"
@@ -17,12 +18,12 @@
 				<p:inputText id="prenom" value="#{dtAddView.userView.prenom}"
 					label="Prenom" required="true">
 				</p:inputText>
-				<p:message for="number" />
+				<p:message for="prenom" />
 				<h:outputText value="#{dtAddView.userView.prenom}" />
 
 				<h:outputLabel for="dateNaissance" value="Date de naissance :"
 					style="font-weight:bold" />
-				<p:inputText id="datenaissance"
+				<p:inputText id="dateNaissance"
 					value="#{dtAddView.userView.dateNaissance}">
 					<f:convertDateTime pattern="MM/dd/yyyy" />
 				</p:inputText>
@@ -32,8 +33,9 @@
 				</h:outputText>
 			</h:panelGrid>
 
-			<p:commandButton value="Ajouter" update="grid" icon="ui-icon-check"
+			<p:commandButton value="Ajouter" update="addUser" icon="ui-icon-check"
 				validateClient="true" style="margin-right:10px"
-				action="#{dtAddView.ajouterUtilisateur()}" />
+				actionListener="#{dtAddView.ajouterUtilisateur()}" />
+		</p:panel>
 	</h:form>
 </ui:composition>

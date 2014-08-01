@@ -1,32 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml" 
-      xmlns:h="http://java.sun.com/jsf/html" 
-      xmlns:p="http://primefaces.org/ui" 
-      xmlns:f="http://java.sun.com/jsf/core" 
-      xmlns:ui="http://java.sun.com/jsf/facelets"> 
-  <h:head> 
-    <title>CVTheque</title> 
-  </h:head> 
-  <h:body> 
-    <!-- formulaire --> 
-    <h:form> 
-       <h3>CVTheque</h3>
-    <p:tabView dynamic="true" cache="true">
-        <p:tab title="Recherche">
-            <h:panelGrid columns="2" cellpadding="10">
-                <ui:include src="recherche.xhtml"/>
-            </h:panelGrid>
-        </p:tab>
-        <p:tab title="Ajout">
-                <ui:include src="ajout.xhtml"/>
-        </p:tab>
-        <p:tab title="Godfather Part III">
-            <h:panelGrid columns="2" cellpadding="10">
-                <p:graphicImage name="demo/images/godfather/godfather3.jpg" />
-                <h:outputText value="After a break of more than 15 years..." />
-            </h:panelGrid>
-        </p:tab>
-    </p:tabView>
-    </h:form> 
-  </h:body> 
-</html> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<title>CVTheque</title>
+</h:head>
+<h:body>
+	<!-- formulaire -->
+	<h:form>
+		<h3>CVTheque</h3>
+		<p:tabView dynamic="true" cache="true">
+			<p:tab title="Recherche">
+				<h:panelGrid columns="2" cellpadding="10">
+					<ui:include src="recherche.xhtml" />
+				</h:panelGrid>
+			</p:tab>
+			<p:tab title="Ajout">
+				<ui:include src="ajout.xhtml" />
+			</p:tab>
+			<p:tab title="Godfather Part III">
+				<h:panelGrid columns="2" cellpadding="10">
+					<p:graphicImage name="demo/images/godfather/godfather3.jpg" />
+					<h:outputText value="After a break of more than 15 years..." />
+				</h:panelGrid>
+			</p:tab>
+		</p:tabView>
+	</h:form>
+</h:body>
+</html>

@@ -4,10 +4,13 @@ import java.io.Serializable;
 import java.util.Calendar;
 import java.util.List;
 
+import javax.faces.bean.ManagedBean;
+
 /**
  * The persistent class for the adresse database table.
  * 
  */
+@ManagedBean
 public class AdresseView implements Serializable {
 	private static final long serialVersionUID = 1L;
 

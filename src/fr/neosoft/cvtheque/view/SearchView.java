@@ -1,7 +1,6 @@
 package fr.neosoft.cvtheque.view;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -9,13 +8,8 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.ViewScoped;
 
-import org.dozer.DozerBeanMapperSingletonWrapper;
-import org.dozer.Mapper;
-import org.primefaces.model.StreamedContent;
-
 import fr.neosoft.cvtheque.dao.UtilisateurDao;
 import fr.neosoft.cvtheque.entities.Utilisateur;
-import fr.neosoft.cvtheque.view.beans.UtilisateurView;
 
 @ManagedBean(name="dtSearchView")
 @ViewScoped

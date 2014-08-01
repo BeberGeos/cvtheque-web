@@ -1,13 +1,13 @@
 package fr.neosoft.cvtheque.view.beans;
 
-import java.io.Serializable;
 import java.util.Calendar;
 import java.util.List;
 
-/**
- * The persistent class for the utilisateur database table.
- * 
- */
+import javax.faces.bean.ApplicationScoped;
+import javax.faces.bean.ManagedBean;
+
+@ManagedBean(name="utilisateurView")
+@ApplicationScoped
 public class UtilisateurView{
 	private int id;
 
