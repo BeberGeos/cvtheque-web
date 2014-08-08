@@ -3,39 +3,39 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
-	<h:form id="addForm">
+	<h:form id="addUserForm">
 		<p:panel header="Ajout utilisateur">
 			<p:messages autoUpdate="true" />
 			<h:panelGrid id="addUser" columns="4" cellpadding="5">
 				<h:outputLabel for="nom" value="Nom :" style="font-weight:bold" />
-				<p:inputText id="nom" value="#{dtAddView.userView.nom}" required="true"
+				<p:inputText id="nom" value="#{dtAddUserView.userView.nom}" required="true"
 					label="Nom" />
 				<p:message for="nom" />
-				<h:outputText value="#{dtAddView.userView.nom}" />
+				<h:outputText value="#{dtAddUserView.userView.nom}" />
 
 				<h:outputLabel for="prenom" value="Prenom :"
 					style="font-weight:bold" />
-				<p:inputText id="prenom" value="#{dtAddView.userView.prenom}"
+				<p:inputText id="prenom" value="#{dtAddUserView.userView.prenom}"
 					label="Prenom" required="true">
 				</p:inputText>
 				<p:message for="prenom" />
-				<h:outputText value="#{dtAddView.userView.prenom}" />
+				<h:outputText value="#{dtAddUserView.userView.prenom}" />
 
 				<h:outputLabel for="dateNaissance" value="Date de naissance :"
 					style="font-weight:bold" />
 				<p:inputText id="dateNaissance"
-					value="#{dtAddView.userView.dateNaissance}">
+					value="#{dtAddUserView.userView.dateNaissance}">
 					<f:convertDateTime pattern="MM/dd/yyyy" />
 				</p:inputText>
 				<p:message for="dateNaissance" />
-				<h:outputText value="#{dtAddView.userView.dateNaissance}">
+				<h:outputText value="#{dtAddUserView.userView.dateNaissance}">
 					<f:convertDateTime pattern="MM/dd/yyyy" />
 				</h:outputText>
 			</h:panelGrid>
 
 			<p:commandButton value="Ajouter" update="addUser" icon="ui-icon-check"
 				validateClient="true" style="margin-right:10px"
-				actionListener="#{dtAddView.ajouterUtilisateur()}" />
+				actionListener="#{dtAddUserView.ajouterUtilisateur()}" />
 		</p:panel>
 	</h:form>
 </ui:composition>

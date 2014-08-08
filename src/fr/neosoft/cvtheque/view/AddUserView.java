@@ -13,9 +13,9 @@ import fr.neosoft.cvtheque.entities.Utilisateur;
 import fr.neosoft.cvtheque.services.GererUtilisateurService;
 import fr.neosoft.cvtheque.view.beans.UtilisateurView;
 
-@ManagedBean(name="dtAddView")
+@ManagedBean(name="dtAddUserView")
 @ViewScoped
-public class AddView implements Serializable{
+public class AddUserView implements Serializable{
 	
 	private static final long serialVersionUID = 3799789277796250748L;
 
